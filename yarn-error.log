@@ -1,0 +1,89 @@
+Arguments: 
+  /usr/local/bin/node /Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js install
+
+PATH: 
+  /Users/prisc_000/.npm-packages/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+Yarn version: 
+  0.0.70
+
+Node version: 
+  9.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest (esy.json): 
+  No manifest
+
+npm manifest (package.json): 
+  {
+    "name": "graphql_ppx",
+    "version": "3.0.4",
+    "preferGlobal": false,
+    "description": "Globally Installable CLI Tools For ReasonML",
+    "main": "index.js",
+    "notes": "Do not include a postinstall script - it will be added for you",
+    "scripts": {
+      "test":
+        "which refmt && which ocamlmerlin && which rebuild && refmt ----where && reactjs_jsx_ppx_v2 ----where && reactjs_jsx_ppx_v3 ----where",
+      "postinstall": "./bin/esyBuildRelease bin install"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/reasonml/reason-cli.git"
+    },
+   "keywords": ["ReasonML", "graphql_ppx", "bucklescript"],
+    "author": "Jordan",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/reasonml/reason-cli/issues"
+    },
+    "esy": {
+      "release": {
+        "releasedBinaries": [
+          "graphql_ppx", "send-introspection-query"
+        ],
+        "NOTES": [
+          "Make the release as lean as you want! Just remove packed binary zips until the executables",
+          " you released above, no longer work correctly."
+        ],
+        "deleteFromBinaryRelease": [
+          "*camlp4-*",
+          "*esy_ocaml__slash__esy_installer-*",
+          "*topkg-*",
+          "*esy_ocaml__slash__substs-*",
+          "*conf_which-*",
+          "*conf_m4-*",
+          "*cppo-*",
+          "*jbuilder-*"
+        ]
+      }
+    },
+    "homepage": "https://github.com/reasonml/reason-cli#readme",
+    "dependencies": {
+      "graphql_ppx": "^0.0.1"
+  },
+    "devDependencies": {
+      "ocaml": "~4.2.3001",
+       "@opam/graphql_ppx": "0.0.4"
+    },
+  }
+
+yarn manifest (yarn.json): 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/prisc_000/code/REASON/graphql_ppx/package.json: Unexpected token } in JSON at position 1514
+      at JSON.parse (<anonymous>)
+      at parseManifest (/Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js:95617:19)
+      at _callee15$ (/Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js:93708:58)
+      at tryCatch (/Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js:107690:40)
+      at Generator.invoke [as _invoke] (/Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js:107924:22)
+      at Generator.prototype.(anonymous function) [as next] (/Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js:107742:21)
+      at step (/Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js:102:30)
+      at /Users/prisc_000/.npm-packages/lib/node_modules/esy/bin/esy.js:113:13
+      at <anonymous>

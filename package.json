@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/reasonml/reason-cli.git"
   },
- "keywords": ["ReasonML", "graphql_ppx", "bucklescript"],
+  "keywords": ["ReasonML", "graphql_ppx", "bucklescript"],
   "author": "Jordan",
   "license": "MIT",
   "bugs": {
@@ -22,9 +22,7 @@
   },
   "esy": {
     "release": {
-      "releasedBinaries": [
-        "graphql_ppx", "send-introspection-query"
-      ],
+      "releasedBinaries": ["graphql_ppx", "send-introspection-query"],
       "NOTES": [
         "Make the release as lean as you want! Just remove packed binary zips until the executables",
         " you released above, no longer work correctly."
@@ -40,13 +38,21 @@
         "*jbuilder-*"
       ]
     },
+    "build": [],
+    "install": [],
+    "exportedEnv": {},
+    "buildsInSource": false,
+    "sandboxType": "project"
   },
   "homepage": "https://github.com/reasonml/reason-cli#readme",
   "dependencies": {
     "graphql_ppx": "^0.0.1"
-},
+  },
   "devDependencies": {
     "ocaml": "~4.2.3001",
-     "@opam/graphql_ppx": "0.0.4"
+    "@opam/graphql_ppx": "0.0.4"
   },
+  "bin": {
+    "graphql_ppx": ".bin/graphql_ppx"
+  }
 }
