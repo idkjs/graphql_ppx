@@ -53,6 +53,6 @@
     "@opam/graphql_ppx": "0.0.4"
   },
   "bin": {
-    "graphql_ppx_bin": ".bin/@graphql_ppx_bin"
+    "graphql_ppx": ".bin/@graphql_ppx"
   }
 }
