@@ -49,8 +49,7 @@
     "graphql_ppx": "^0.0.1"
   },
   "devDependencies": {
-    "ocaml": "~4.2.3001",
-    "@opam/graphql_ppx": "0.0.4"
+    "ocaml": "~4.2.3001"
   },
   "bin": {
     "graphql_ppx": ".bin/graphql_ppx"
